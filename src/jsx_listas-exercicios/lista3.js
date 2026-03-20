@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     container: { 
         flex: 1, 
         backgroundColor: "#F5F5F5", 
-        paddingTop: 60 
+        paddingTop: 60
     },
     titulo: {
         fontSize: 22,
