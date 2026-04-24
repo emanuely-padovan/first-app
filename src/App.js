@@ -1,13 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Exemplo03 from './jsx_examples/03_condicionais';
+import Recados from './hooks/emanuely-macedo-padovan-lista6/RecadosScaffold';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Exemplo03 />
-      <StatusBar style="auto" />
-    </View>
+    <Recados/>
   );
 }
 
@@ -15,12 +11,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#ffffff',
-    alignItems: 'center',
+    alignContent: 'center',
     justifyContent: 'center',
   },
-
   textStyle: {
     fontSize: 50,
-    color: "white"
+    color: "white",
   }
 });
