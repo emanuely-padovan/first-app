@@ -1,9 +1,13 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
-import Recados from './hooks/emanuely-macedo-padovan-lista6/RecadosScaffold';
+import StackNavigator from './navigation/stack-navigation';
 
 export default function App() {
   return (
-    <Recados/>
+    <NavigationContainer>
+      {/* Os navegadores ficam aqui dentro... */}
+      <StackNavigator/>
+    </NavigationContainer>
   );
 }
 

@@ -1,21 +1,3 @@
-/*
- * COMPORTAMENTOS ESPERADOS:
- * 1. O usuário digita no campo de texto
- * 2. Ao clicar em Enviar, a mensagem aparece abaixo
- * 3. O campo de texto é limpo após o envio
- *
- * Exemplo:
- *   <TextInput
- *     onChangeText={texto => console.log(texto)}
- *   />
- *
- * DICA — limpar o campo:
- * Para limpar o TextInput após o envio, basta
- * atualizar o estado do texto para string vazia ''.
- * Use a prop value={} no TextInput para conectar
- * o estado ao campo visualmente.
-*/
-
 import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
@@ -45,7 +27,7 @@ export default function Recados() {
         style={styles.input}
         placeholder="Digite sua mensagem..."
         value={}
-        onChangeText={/* sua função aqui */}
+        onChangeText={(texto) => setTexto(texto)}
       />
 
       <TouchableOpacity style={styles.botao} onPress={() => handleEnviar}>
