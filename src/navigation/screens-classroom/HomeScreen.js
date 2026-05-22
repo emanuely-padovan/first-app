@@ -7,7 +7,7 @@ export default function HomeScreen({navigation}) {
         <Text style={styles.titulo}>Home</Text>
         <Button title="Ir para tela de Detalhes" onPress={() => navigation.navigate("Detalhes", {
         titulo: "Pedido 1",
-        descricao: "Lasanha",
+        descricao: "Lasanha à bolonhesa",
       })} />
       </View>
     </View>
