@@ -1,8 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
-import StackNavigator from './navigation/stack-navigation';
-import BottomTabNavigator from './navigation/bottom-tab-navigation';
-import DrawerNavigator from './navigation/drawer-navigation';
+//import StackNavigator from './navigation/stack-navigation';
+import BottomTabNavigator from './navigation/routes/bottom-tab-navigation';
+//import DrawerNavigator from './navigation/drawer-navigation';
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
       {/* Os navegadores ficam aqui dentro... */}
 
       {/*<StackNavigator/>*/}
-      {/*<BottomTabNavigator/>*/}
+      <BottomTabNavigator/>
       {/*<DrawerNavigator/>*/}
     </NavigationContainer>
   );
